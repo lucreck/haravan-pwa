@@ -72,11 +72,12 @@ export class CartService extends HttpService {
 
     return await this.post("/cart/add", payload, options).pipe(
       tap(resp => {
-        this.cartCookie = resp.headers.get("x-suplo-haravan-cookie");
-        console.log(this.cartCookie)
-        // if(this.cartCookie == undefined){
-        //   this.localStorage.setCartCookie(this.cartCookie)
-        // }
+        if(this.cartCookie == "empty"){
+          this.cartCookie = resp.headers.get("x-suplo-haravan-cookie");
+          this.localStorage.setCartCookie(this.cartCookie).then(data => {
+            console.log("stored: ", data)
+          })
+        }
         // const keys = resp.headers.keys();
         // let headers = keys.map(key =>
         //   `${key}: ${resp.headers.get(key)}`);
@@ -84,6 +85,13 @@ export class CartService extends HttpService {
         // console.log('body', resp.body)
       })
     ).toPromise();
+  }
+
+  clearCart(){
+    this.cartCookie = "empty";
+    this.localStorage.setCartCookie(this.cartCookie).then(data => {
+      console.log("stored: ", data)
+    })
   }
 }
 

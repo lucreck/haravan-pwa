@@ -11,7 +11,7 @@ export class LocalStorageService {
   }
 
   setCartCookie(data){
-    this.storage.set('cart_cookie', data);
+    return this.storage.set('cart_cookie', data);
   }
 
   getCartCookie(){
