@@ -1,0 +1,41 @@
+<ion-card class="fake-box">
+  <ion-card-header>
+    <div class="fake-item-image">
+      <div class="fake-img"></div>
+    </div>
+    <ion-card-subtitle>
+      <ion-skeleton-text width=100px></ion-skeleton-text>
+    </ion-card-subtitle>
+    <ion-card-title>
+      <ion-skeleton-text width=130px></ion-skeleton-text>
+    </ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-skeleton-text width=100px></ion-skeleton-text>
+  </ion-card-content>
+  <div text-center padding-bottom>
+    <ion-button color="medium">
+      <ion-icon slot="start" name="cart"></ion-icon>
+      <ion-skeleton-text width=80px></ion-skeleton-text>
+    </ion-button>
+  </div>
+  <span [@fakeLoad]="isPresent"></span>
+</ion-card>
+
+<!-- <ion-col size="2" size-sm="3" size-xs="3" size-md="3" size-lg="2" col-lg-2 col-xs-3>
+      <div class="fake-item-image">
+        <div class="fake-img"></div>
+      </div>
+    </ion-col>
+    <ion-col size="10" size-xs="9" size-sm="9" size-md="9" size-lg="10" col-lg-10 col-xs-9>
+      <div class="fake-item-info">
+        <div class="fake-box">
+          <ion-skeleton-text width=40px></ion-skeleton-text>
+          <ion-skeleton-text width=200px></ion-skeleton-text>
+          <ion-skeleton-text width=600px></ion-skeleton-text>
+          <ion-skeleton-text width=100px></ion-skeleton-text>
+          <ion-skeleton-text width=80px></ion-skeleton-text>
+          <span [@fakeLoad]="isPresent"></span>
+        </div>
+      </div>
+    </ion-col> -->

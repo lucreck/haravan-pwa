@@ -1,0 +1,11 @@
+{
+  "name": "haravan-web-pwa",
+  "integrations": {},
+  "type": "angular",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://test.suplo.vn"
+    }
+  ]
+}

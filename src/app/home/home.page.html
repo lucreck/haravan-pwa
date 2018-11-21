@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  Để sử dụng api gateway này, shop Haravan cần phải được cài theme Suplo. <br>
+  Theme chuẩn: Suplo Food - Không xoá
+    <pre><code  class="dark" highlight [code]="codeOver"></code></pre>
+    
+
+  <ion-card *ngFor="let item of apiLists">
+    <ion-card-header>
+      <ion-card-subtitle>{{item.description}}</ion-card-subtitle>
+      <ion-card-title>{{item.endpoint}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <h3>Demo</h3>
+        <pre><code highlight [code]="item.code"></code></pre>
+      <h3>Response</h3>
+        <!-- <blockquote>
+          <pre>{{ item.res | json }}</pre>
+      </blockquote> -->
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

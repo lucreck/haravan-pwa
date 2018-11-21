@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{product?.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" size-sx="12">
+        <ion-card>
+          <ion-card-header>
+              <ion-slides #productSlides pager="true" [options]="slideOpts">
+                  <ion-slide *ngFor="let image of product?.images">
+                      <img [src]="image" />
+                  </ion-slide>
+                </ion-slides>
+          </ion-card-header>
+          <ion-card-content color="medium">
+            <ion-row>
+                <ion-col size="4" *ngFor="let image of product?.images; let i = index" (click)="goToSlideIndex(i)">
+                    <img [src]="image"/>
+                </ion-col>
+              </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" size-sx="12">
+        <ion-card>
+          <ion-card-header>
+            <h1>
+              {{product?.title}}
+            </h1>
+            <ion-card-subtitle>Loại: {{product?.type}}</ion-card-subtitle>
+            <ion-card-title color="danger">{{product?.variants[0].price | number}}đ</ion-card-title>
+            <ion-button color="danger" (click)="addToCart(product?.variants[0].id, 1)">
+                <ion-icon slot="start" name="cart" ></ion-icon>
+                Thêm vào giỏ
+            </ion-button>
+          </ion-card-header>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <h4>
+              Mô tả sản phẩm
+            </h4>
+          </ion-card-header>
+          <ion-card-content [innerHtml]="product?.body_html">
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

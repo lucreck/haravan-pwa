@@ -1,0 +1,39 @@
+ion-sleketon-text{
+    --max-width: 100% !important;
+    --ion-max-width: 100% !important;
+    --ion-item-max-width: 100% !important;
+}
+
+.fake-box{
+    position: relative;
+    overflow: hidden;
+}
+.fake-img{
+    height: 100%;
+    width: 100%;
+    min-height: 120px;
+    min-width: 52px;
+    background: #000;
+    opacity: .1;
+}
+.fake-box span{
+    content: "";
+    background-color: #fff;
+    height: 100%;
+    opacity: 0.5;
+    display: block;
+    left: -100%;
+    width: 30%;
+    top: 0;
+    position: absolute;
+    -webkit-transform: skewX(45deg);
+    -moz-transform: skewX(45deg);
+    -ms-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
+    transform: skewX(45deg);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    animation: animatedBar 700ms linear infinite;
+}

@@ -1,0 +1,43 @@
+{
+    "attributes": {},
+    "token": "ea10354b921d4711bc79a6fa18029b1b",
+    "item_count": 2,
+    "items": [
+        {
+            "id": 1054083160,
+            "title": "Pizza số 2",
+            "price": 20000000,
+            "line_price": 40000000,
+            "price_original": 20000000,
+            "line_price_orginal": 40000000,
+            "quantity": 2,
+            "sku": null,
+            "grams": 0,
+            "vendor": "Khác",
+            "properties": {},
+            "variant_id": 1022777467,
+            "product_id": 1011827162,
+            "gift_card": false,
+            "url": "/products/pizza-so-2",
+            "image": "http://product.hstatic.net/1000259614/product/upload_ec130c045a424b3598ea0d373e3d4f24.jpg",
+            "handle": "pizza-so-2",
+            "requires_shipping": true,
+            "not_allow_promotion": false,
+            "product_title": "Pizza số 2",
+            "barcode": null,
+            "product_description": "<p>Smokey BBQ Pulled Jackfruit, Spanish Onions and Roasted Capsicum on a Tomato base, garnished with Vegan Aioli, Parsley and freshly chopped Chilli. (Made with Vegan Cheese)</p><p>####</p><p>Smokey BBQ Pulled Jackfruit, Spanish Onions and Roasted Capsicum on a Tomato base, garnished with Vegan Aioli, Parsley and freshly chopped Chilli. (Made with Vegan Cheese)</p><p><strong>Nutritional info</strong></p><p>Nutritional infoServing Size Per 100g</p><p>Calories 191Cal</p><p>Energy 800kJ</p><p>Protein 4.5g</p><p>Fat - Total 5.9g</p><p>Fat Saturated 2.4g</p><p>Fat - Trans Carbohydrate 28.8g</p><p>Sugars 3.3g</p><p>Dietary Fibre Sodium 359mg</p><p><img src=\"//file.hstatic.net/1000259614/file/8c39d3ab-9f92-49fa-a8f1-ccbd86c38219f3.png\" data-mce-src=\"//file.hstatic.net/1000259614/file/8c39d3ab-9f92-49fa-a8f1-ccbd86c38219f3.png\" style=\"display: block; margin-left: auto; margin-right: auto;\" data-mce-style=\"display: block; margin-left: auto; margin-right: auto;\"></p>",
+            "variant_title": "Pizza số 2",
+            "variant_options": [
+                "40 cm",
+                "Dày"
+            ],
+            "promotionref": null,
+            "promotionby": []
+        }
+    ],
+    "total_price": 40000000,
+    "total_weight": 0,
+    "note": null,
+    "location_id": null,
+    "requires_shipping": true
+}
